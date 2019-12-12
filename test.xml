@@ -1,0 +1,54 @@
+<NSDeploymentPackage rcVersion="13.2.1.1881.083017">
+  <Name catalogVersion="" vendorName="">agents_dummy</Name>
+  <TypeID>3</TypeID>
+  <DeploymentOptions></DeploymentOptions>
+  <Guid>4F074B93-9C36-4DDA-BAE6-D84F9345CD24</Guid>
+  <Description>agents_dummy</Description>
+  <EntityXML>Entity XML</EntityXML>
+  <DeploymentXML><rex>
+  <Header requestAction="put">
+    <Params>
+      <DatasourceOverride>--LOCALDATASOURCE--</DatasourceOverride>
+      <OptionSetNameDefault>catalogDeployerDefault</OptionSetNameDefault>
+      <QueueOnMatchFound>overwrite</QueueOnMatchFound>
+      <QueueDeployAssociations>false</QueueDeployAssociations>
+      <GroupOnMatchFound>overwrite</GroupOnMatchFound>
+      <GroupDeployAssociations>false</GroupDeployAssociations>
+      <OrganizationalUnitOnMatchFound>overwrite</OrganizationalUnitOnMatchFound>
+      <OrganizationalUnitDeployAssociations>false</OrganizationalUnitDeployAssociations>
+      <RoleOnMatchFound>overwrite</RoleOnMatchFound>
+      <RoleDeployAssociations>false</RoleDeployAssociations>
+      <PersonOnMatchFound>overwrite</PersonOnMatchFound>
+      <PersonDeployAssociations>false</PersonDeployAssociations>
+      <CategoryOnMatchFound>overwrite</CategoryOnMatchFound>
+      <CategoryDeployAssociations>false</CategoryDeployAssociations>
+      <AgentOnMatchFound>overwrite</AgentOnMatchFound>
+      <EmailTemplateOnMatchFound>overwrite</EmailTemplateOnMatchFound>
+      <ServiceItemDefinitionOnMatchFound>merge</ServiceItemDefinitionOnMatchFound>
+      <StandardDefinitionOnMatchFound>merge</StandardDefinitionOnMatchFound>
+      <AgreementTemplateOnMatchFound>merge</AgreementTemplateOnMatchFound>
+      <BillingRateOnMatchFound>useExisting</BillingRateOnMatchFound>
+      <IncludedBillingRateData>false</IncludedBillingRateData>
+    </Params>
+  </Header>
+  <Agents>
+    <Agent name="dummy" action="dummy" contextType="0" inboundAdapter="Dummy Adapter" outboundAdapter="Dummy Adapter" inboundTransformation="" outboundTransformation="" emailTemplate="" pollInterval="10000" maxRetry="0" retryInterval="0" baseTransformation="DataWithoutServiceNSXML" createdBy="admin" modifiedBy="admin">
+      <AdapterProperties/>
+      <Parameters>
+        <Parameter name="Name" inDataSpec="#vin.Name#" outDataExpression="" outResponseParam="" inboundUsage="optional" outboundUsage="not-used" outboundResponseUsage="not-used"/>
+        <Parameter name="ID" inDataSpec="#vin.ID#" outDataExpression="" outResponseParam="" inboundUsage="optional" outboundUsage="not-used" outboundResponseUsage="not-used"/>
+        <Parameter name="Dept" inDataSpec="#vin.Dept#" outDataExpression="" outResponseParam="" inboundUsage="optional" outboundUsage="not-used" outboundResponseUsage="not-used"/>
+        <Parameter name="City" inDataSpec="#vin.City#" outDataExpression="" outResponseParam="" inboundUsage="optional" outboundUsage="not-used" outboundResponseUsage="not-used"/>
+      </Parameters>
+      <Transaction actionRequested="getXml" actionResult="Succeeded" actionResultCode="0" actionTaken="fetched" detail=""/>
+      <RelatedEntities/>
+    </Agent>
+  </Agents>
+</rex></DeploymentXML>
+  <HasImage>false</HasImage>
+  <CreatorObjectId>0</CreatorObjectId>
+  <CreatorObjectInstanceId>0</CreatorObjectInstanceId>
+  <DocSize>0</DocSize>
+  <TenantId>0</TenantId>
+  <UploadedBy>0</UploadedBy>
+</NSDeploymentPackage>
