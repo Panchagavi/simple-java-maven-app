@@ -1,5 +1,5 @@
 ---
-environment: production
+environment: production for psc servers
 classes:
   nfs::server:
     exports:
